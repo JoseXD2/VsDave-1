@@ -27,7 +27,7 @@ class WebmHandler
 	
 	public function makePlayer():Void
 	{
-		io = new WebmIoFile Asset2File.getPath(vidPath);
+		io = new WebmIoFile(Asset2File.getPath(vidPath));
 		webm = new WebmPlayer();
 		webm.fuck(io, false);
 		webm.addEventListener(WebmEvent.PLAY, function(e) {
