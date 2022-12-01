@@ -245,6 +245,10 @@ class StoryMenuState extends MusicBeatState
 
 		super.create();
 
+		#if android
+addVirtualPad(FULL, A_B);
+#end
+	
 		if (dofunnytristan)
 		{
 			FlxG.sound.music.fadeOut(1,0);
